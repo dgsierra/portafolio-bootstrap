@@ -12,7 +12,7 @@
     <title>My portafolio</title>
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixedposition">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-4">Portfolio</span>
@@ -46,7 +46,7 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
-                <button type="button" class="btn btn-primary btn-project">See Project</button>
+                <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
               </div>
             </div>
             <div class="col">
@@ -56,7 +56,7 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
-                <button type="button" class="btn btn-primary btn-project">See Project</button>
+                <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
               </div>
             </div>
             <div class="col">
@@ -66,7 +66,7 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                 </div>
-                <button type="button" class="btn btn-primary btn-project">See Project</button>
+                <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
               </div>
             </div>
             <div class="col">
@@ -76,10 +76,30 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
-                <button type="button" class="btn btn-primary btn-project">See Project</button>
+                <button type="button" class="btn btn-primary btn-project" data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
               </div>
             </div>
           </div>
+          
+          <div class="test">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="projectmodal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="projectmodallabel">Thanks for visit my project.</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      For more information about this project, please contact me.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
         </section>
 
         <section id="Skills" class="container pt-5 row row-cols-1 row-cols-md-3 g-4">
@@ -105,7 +125,26 @@
             <h4><span class="badge bg-danger">Terminal</span></h4>
           </div>
         </section>
+        <section class="contactme container">
+            
+              <div class=" pt-5 mb-4 bg-light rounded-3">
+                <h1 class="display-5 fw-bold">Contact Me</h1>
+                <div class="container-fluid py-2">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="container-fluid py-2">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3 my-lg-2 mx-lg-2 px-sm-0 contactme">
+                    <label for="contactmeform" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="contactmeform" rows="10"></textarea>
+                </div>
+            </div>
+        </section>
       </main>
 
 </body>
 </html>
+  
