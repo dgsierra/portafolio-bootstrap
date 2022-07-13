@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- JavaScript Bundle with Popper -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -21,15 +21,14 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Portfolio</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#welcome" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
                 <li class="nav-item"><a href="#Contact-me" class="nav-link">Contact Me</a></li>
               </ul>
             </div>
@@ -37,20 +36,8 @@
         </div>
       </nav>
       </header>
-      <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Portfolio</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-        <li class="nav-item"><a href="#Contact-me" class="nav-link">Contact Me</a></li>
-      </ul> -->
-      <main class="container d-grid gap-5">
-        <section class="home">
+      <main class="container d-grid gap-5" data-bs-spy="scroll"  data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <section class="home" id="welcome">
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold">Welcome to my Portfolio</h1>
