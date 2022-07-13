@@ -5,9 +5,9 @@
 }
 
 .fixedposition {
-    position: fixed;
-    z-index: 99999;
-    background-color: aliceblue;
-    right: 0;
-    left: 0;
+  position: fixed;
+  z-index: 99999;
+  background-color: aliceblue;
+  right: 0;
+  left: 0;
 }
