@@ -12,21 +12,44 @@
     <title>My portafolio</title>
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixedposition">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4">Portfolio</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-        </ul>
+    <header>
+      <nav class="navbar bg-light fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#Contact-me" class="nav-link">Contact Me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       </header>
-      <main class="container">
+      <!-- <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Portfolio</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#Contact-me" class="nav-link">Contact Me</a></li>
+      </ul> -->
+      <main class="container d-grid gap-5">
         <section class="home">
             <div class="p-5 mb-4 bg-light rounded-3">
                 <div class="container-fluid py-5">
@@ -38,6 +61,7 @@
             </div>
         </section>
         <section id="projects" class="projects container">
+          <h2>My Previous Projects</h2>
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
@@ -125,7 +149,7 @@
             <h4><span class="badge bg-danger">Terminal</span></h4>
           </div>
         </section>
-        <section class="contactme container">
+        <section id="Contact-me" class="contactme container">
             
               <div class=" pt-5 mb-4 bg-light rounded-3">
                 <h1 class="display-5 fw-bold">Contact Me</h1>
@@ -135,7 +159,7 @@
                 </div>
                 <div class="container-fluid py-2">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
                 </div>
                 <div class="mb-3 my-lg-2 mx-lg-2 px-sm-0 contactme">
                     <label for="contactmeform" class="form-label">Example textarea</label>
